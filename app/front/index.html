@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="txtname">
+                Name: <input type="text" name="" id="txtname" placeholder="producto">
+                <br>
+            </label>
+            
+            <label for="txtquantity">
+                Quantity: <input type="text" name="" id="txtquantity" placeholder="Cantidad">
+                <br>
+            </label>
+            
+            <label for="txtcost">
+                Cost: <input type="text" name="" id="txtcost" placeholder="Costo">
+                <br>
+            </label>
+
+            <button type="button" id="btnAdd">Agregar</button> 
+            <!--debido a que en el form no se asoció ninguna action porque vamos a seguir procesando la info
+                con js, no es recomendable usar un button type submit--> 
+            <button type="reset">Cancelar</button>
+        </form>
+
+        <div>
+            <form>
+                <label for='txtRFC'>
+                    RFC Cliente:<input type="text" id="txtRFC" placeholder="RFCX0000000000">
+                    <br>
+                </label>
+                <h3>Lista de productos</h3>
+                <button type="button" id="btnGetProducts">Refrescar</button>
+                <select name="" id="mnuproducts">
+
+                </select>
+                <label for="txtinvquantity">
+                    Quantity: <input type="text" id="txtinvquantity" value="0">
+                    <br>
+                </label>
+                <button type="button" id="btnAdd2Invoice">Incluir</button>
+                <br>
+                <br>
+                <button type="button" id="btnSaveInvoice">Guardar factura</button>
+                <div id="detalleFactura"></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 class invoice_details{
-    constructor(order_id, product_id, quantity, cost){
-        this.order_id=order_id;
+    constructor(invoice_id, product_id, quantity, cost){
+        this.invoice_id=invoice_id;
         this.product_id=product_id;
         this.quantity=quantity;
         this.cost=cost;
